@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223608",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "rep_grafica",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "repGrafica",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "Estatus",
+      "fieldValues": "Activo,Inactivo"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "RepGrafica",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

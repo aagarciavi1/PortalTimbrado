@@ -1,0 +1,28 @@
+{
+  "proyecto03App": {
+    "motivosCancel": {
+      "home": {
+        "title": "Motivos Cancels",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Motivos Cancel",
+        "createOrEditLabel": "Crear o editar Motivos Cancel",
+        "notFound": "Ningún Motivos Cancels encontrado"
+      },
+      "created": "Un nuevo Motivos Cancel ha sido creado con el identificador {{ param }}",
+      "updated": "Un Motivos Cancel ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Motivos Cancel ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Motivos Cancel {{ id }}?"
+      },
+      "detail": {
+        "title": "Motivos Cancel"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "motivoCancel": "Motivo Cancel",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}

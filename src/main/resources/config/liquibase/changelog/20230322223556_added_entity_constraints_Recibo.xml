@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Recibo.
+    -->
+    <changeSet id="20230322223556-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="tiporecibo_id"
+                                 baseTableName="recibo"
+                                 constraintName="fk_recibo__tiporecibo_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tipo_recibo"/>
+
+        <addForeignKeyConstraint baseColumnNames="repgrafica_id"
+                                 baseTableName="recibo"
+                                 constraintName="fk_recibo__repgrafica_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="rep_grafica"/>
+
+        <addForeignKeyConstraint baseColumnNames="parametros_id"
+                                 baseTableName="recibo"
+                                 constraintName="fk_recibo__parametros_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="parametros"/>
+    </changeSet>
+</databaseChangeLog>

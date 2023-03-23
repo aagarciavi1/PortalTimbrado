@@ -1,0 +1,9 @@
+{
+  "proyecto03App": {
+    "Estatus": {
+      "null": "",
+      "Activo": "Activo",
+      "Inactivo": "Inactivo"
+    }
+  }
+}

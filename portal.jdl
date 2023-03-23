@@ -1,0 +1,245 @@
+entity RegistInstit {
+    Fecha LocalDate required,
+    IdInstit Integer required,
+    estatus Estatus 
+    Nivel Integer required
+    RazonSocial String required,	
+    RFC String required,
+    Pais String,
+    Municipio String,
+    Localidad String,
+    CodigoPostal Integer,
+    Colonia String,
+    Calle String,
+    NumExt Integer,
+    NumInt Integer,
+    Logo Blob,
+    Certificado Blob,
+    LlavePriv Blob,
+    Contrasena String,
+    FechaExp LocalDate,
+    Dias Integer,
+    Correo String,
+    Usuario String,
+    FechaMod LocalDate
+}
+
+enum Estatus {
+    Activo, Inactivo    
+}
+
+entity Parametros {
+	Fecha LocalDate required,
+    IdInstit Integer required,
+    Nivel Integer required,
+    Usuario String,
+    FechaMod LocalDate
+}
+
+entity Recibo {
+	   Fecha LocalDate required,
+       IdInstit Integer required,
+       Nivel Integer required,
+       TipoCFDI String required,       
+       Clave String,       
+       EnvioConCFDI String,
+       EnvioSinCFDI String,
+       AplicaLeyenda String,
+       Leyenda Long,
+       Usuario String,
+       FechaMod LocalDate       
+}
+
+entity FTP {
+	Fecha LocalDate required,
+    IdInstit Integer required,
+    Nivel Integer required,
+    Clave String,
+    CarpetaFTP String,
+    SubcarpetaFTP String,
+    DescripcionFTP String,
+    IpFTP String,
+    Puerto Integer,
+    UsuarioFTP String,
+    Contrasena String,
+    Usuario String,
+    FechaMod LocalDate
+}
+
+entity Notificaciones {
+	Fecha LocalDate required,
+    IdInstit Integer required,
+    Nivel Integer required,    
+    TipoNot TipoNot    
+    Clave String,    
+    Asunto String,
+    Texto Long,
+    PiePagina String,
+ 	Usuario String,
+    FechaMod LocalDate
+}
+
+enum TipoNot {
+    NOTEXP, CFDI    
+}
+
+/*Seguridad*/
+entity Perfiles{
+	Fecha LocalDate required,
+    Perfil String required,
+    Usuario String,
+    FechaMod LocalDate
+}
+
+entity Funcionalidades{
+	Fecha LocalDate required,
+    Perfil String required,
+    Funcionalidad Funcionalidad,
+    Alta String,
+    Editar String,
+    ActivarInact String,
+    Consulta String
+    Usuario String,
+    FechaMod LocalDate
+}
+
+enum Funcionalidad {
+    Instituciones, Catalogos, Configuracion, Seguridad, Reportes, ConsultaCFDI, EnvioFTP_Notificaciones, CancelacionRecibos, Auditoria
+}
+
+
+entity Usuarios{
+	Fecha LocalDate required,
+	Usuario String required,
+    Descr String required,
+    IdInstit Integer required,
+    Correo String,
+    Contrasena String,
+    ConfirmarContras String,
+    Estatus Estatus,
+    UsuarioCrea String,
+}
+
+
+
+/*********Catálogos*********/
+entity RegimenFis{
+	Fecha LocalDate,
+    RegimenF String,
+    estatus Estatus
+    Usuario String,
+    FechaMod String
+}
+
+entity Estado{
+	Fecha LocalDate,
+    Pais String,
+    Estatdo String,
+    DescEstado String,
+    estatus Estatus
+    Usuario String
+    FechaMod LocalDate
+}
+
+entity EstatusCFDI{
+	Fecha LocalDate,
+    DescEstCFDI String,
+    estatus Estatus
+    Usuario String,
+    FechaMod LocalDate
+}
+
+entity MotivosCancel{
+	Fecha LocalDate,
+    MotivoCancel String,
+    estatus Estatus
+    Usuario String,
+    FechaMod LocalDate
+
+}
+
+entity TipoCFDI {
+	Fecha LocalDate,
+    TipoCFDI String,
+    estatus Estatus
+    Usuario String,
+    FechaMod LocalDate
+}
+
+entity TipoRecibo{
+	Fecha LocalDate,
+    TipoRecibo String,
+    Clave String,
+    estatus Estatus
+    Usuario String,
+    FechaMod LocalDate
+}
+
+entity RepGrafica{
+	Fecha LocalDate,
+    RepGrafica String,
+    estatus Estatus
+    Usuario String,
+    FechaMod LocalDate    
+}
+
+
+
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+	RegistInstit{regimenfis} to RegimenFis,
+    RegistInstit{estado} to  Estado 
+    RegistInstit{registinstit} to  RegistInstit 
+    RegistInstit{registinstiti} to  RegistInstit 
+}
+
+relationship OneToOne {
+	Parametros{registinstit} to RegistInstit,
+	Parametros{tipocfdi} to TipoCFDI
+}    
+
+relationship OneToMany {
+	Parametros{recibo} to Recibo
+}    
+
+relationship OneToOne {
+	Recibo{tiporecibo} to TipoRecibo,
+    Recibo{repgrafica} to RepGrafica,       
+}       
+
+relationship OneToOne {
+	FTP{registinstit} to RegistInstit,
+	FTP{tipocfdi} to TipoCFDI,
+    FTP{tiporecibo} to TipoRecibo
+}   
+
+relationship OneToOne {
+	Notificaciones{registinstit} to RegistInstit,
+	Notificaciones{tipocfdi} to TipoCFDI,
+    Notificaciones{tiporecibo} to TipoRecibo
+}       
+
+relationship OneToOne {
+	Notificaciones{registinstit} to RegistInstit,
+	Notificaciones{tipocfdi} to TipoCFDI,
+    Notificaciones{tiporecibo} to TipoRecibo
+}       
+
+relationship OneToMany {
+	Funcionalidades{Perfil} to Perfiles
+}
+
+relationship OneToOne {
+	Usuarios{registinstit} to RegistInstit,
+    Usuarios{Perfil} to Perfiles,
+    Usuarios{tipocfdi} to TipoCFDI,
+    Usuarios{tiporecibo} to TipoRecibo
+}       
+
+
+// Set pagination options
+paginate RegistInstit, RegimenFis, Parametros, Recibo, FTP, Notificaciones, Perfiles, Funcionalidades, Usuarios, Estado, EstatusCFDI, MotivosCancel, TipoCFDI, TipoRecibo, RepGrafica  with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct

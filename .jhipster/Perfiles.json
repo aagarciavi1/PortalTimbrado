@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223559",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "perfiles",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "perfil",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Perfiles",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "funcionalidades",
+      "otherEntityRelationshipName": "perfil",
+      "relationshipName": "funcionalidades",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

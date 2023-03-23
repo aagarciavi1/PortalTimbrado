@@ -1,0 +1,33 @@
+{
+  "proyecto03App": {
+    "funcionalidades": {
+      "home": {
+        "title": "Funcionalidades",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Funcionalidades",
+        "createOrEditLabel": "Create or edit a Funcionalidades",
+        "notFound": "No Funcionalidades found"
+      },
+      "created": "A new Funcionalidades is created with identifier {{ param }}",
+      "updated": "A Funcionalidades is updated with identifier {{ param }}",
+      "deleted": "A Funcionalidades is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Funcionalidades {{ id }}?"
+      },
+      "detail": {
+        "title": "Funcionalidades"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "perfil": "Perfil",
+      "funcionalidad": "Funcionalidad",
+      "alta": "Alta",
+      "editar": "Editar",
+      "activarInact": "Activar Inact",
+      "consulta": "Consulta",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod",
+      "perfil": "Perfil"
+    }
+  }
+}

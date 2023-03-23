@@ -1,0 +1,39 @@
+{
+  "proyecto03App": {
+    "fTP": {
+      "home": {
+        "title": "FTPS",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new FTP",
+        "createOrEditLabel": "Create or edit a FTP",
+        "notFound": "No FTPS found"
+      },
+      "created": "A new FTP is created with identifier {{ param }}",
+      "updated": "A FTP is updated with identifier {{ param }}",
+      "deleted": "A FTP is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete FTP {{ id }}?"
+      },
+      "detail": {
+        "title": "FTP"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "idInstit": "Id Instit",
+      "nivel": "Nivel",
+      "clave": "Clave",
+      "carpetaFTP": "Carpeta FTP",
+      "subcarpetaFTP": "Subcarpeta FTP",
+      "descripcionFTP": "Descripcion FTP",
+      "ipFTP": "Ip FTP",
+      "puerto": "Puerto",
+      "usuarioFTP": "Usuario FTP",
+      "contrasena": "Contrasena",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod",
+      "registinstit": "Registinstit",
+      "tipocfdi": "Tipocfdi",
+      "tiporecibo": "Tiporecibo"
+    }
+  }
+}

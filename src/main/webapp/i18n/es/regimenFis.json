@@ -1,0 +1,28 @@
+{
+  "proyecto03App": {
+    "regimenFis": {
+      "home": {
+        "title": "Regimen Fis",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Regimen Fis",
+        "createOrEditLabel": "Crear o editar Regimen Fis",
+        "notFound": "Ningún Regimen Fis encontrado"
+      },
+      "created": "Un nuevo Regimen Fis ha sido creado con el identificador {{ param }}",
+      "updated": "Un Regimen Fis ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Regimen Fis ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Regimen Fis {{ id }}?"
+      },
+      "detail": {
+        "title": "Regimen Fis"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "regimenF": "Regimen F",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}

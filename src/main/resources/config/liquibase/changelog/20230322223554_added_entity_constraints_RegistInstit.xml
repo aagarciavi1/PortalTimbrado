@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity RegistInstit.
+    -->
+    <changeSet id="20230322223554-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="regimenfis_id"
+                                 baseTableName="regist_instit"
+                                 constraintName="fk_regist_instit__regimenfis_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="regimen_fis"/>
+
+        <addForeignKeyConstraint baseColumnNames="estado_id"
+                                 baseTableName="regist_instit"
+                                 constraintName="fk_regist_instit__estado_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="estado"/>
+
+        <addForeignKeyConstraint baseColumnNames="registinstit_id"
+                                 baseTableName="regist_instit"
+                                 constraintName="fk_regist_instit__registinstit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="regist_instit"/>
+
+        <addForeignKeyConstraint baseColumnNames="registinstiti_id"
+                                 baseTableName="regist_instit"
+                                 constraintName="fk_regist_instit__registinstiti_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="regist_instit"/>
+    </changeSet>
+</databaseChangeLog>

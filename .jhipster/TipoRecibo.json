@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223607",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "tipo_recibo",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "tipoRecibo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clave",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "Estatus",
+      "fieldValues": "Activo,Inactivo"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TipoRecibo",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

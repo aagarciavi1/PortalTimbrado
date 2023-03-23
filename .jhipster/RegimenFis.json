@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223602",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "regimen_fis",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "regimenF",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "Estatus",
+      "fieldValues": "Activo,Inactivo"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "Catálogos",
+  "jpaMetamodelFiltering": false,
+  "name": "RegimenFis",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

@@ -1,0 +1,58 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223555",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "parametros",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "idInstit",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nivel",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Parametros",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "registInstit",
+      "ownerSide": true,
+      "relationshipName": "registinstit",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "tipoCFDI",
+      "ownerSide": true,
+      "relationshipName": "tipocfdi",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "recibo",
+      "otherEntityRelationshipName": "parametros",
+      "relationshipName": "recibo",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

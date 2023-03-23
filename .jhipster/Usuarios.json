@@ -1,0 +1,82 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223601",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "usuarios",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descr",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "idInstit",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "correo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contrasena",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "confirmarContras",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "Estatus",
+      "fieldValues": "Activo,Inactivo"
+    },
+    {
+      "fieldName": "usuarioCrea",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Usuarios",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "registInstit",
+      "ownerSide": true,
+      "relationshipName": "registinstit",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "perfiles",
+      "ownerSide": true,
+      "relationshipName": "perfil",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "tipoCFDI",
+      "ownerSide": true,
+      "relationshipName": "tipocfdi",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "tipoRecibo",
+      "ownerSide": true,
+      "relationshipName": "tiporecibo",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

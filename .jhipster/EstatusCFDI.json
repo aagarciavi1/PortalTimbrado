@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223604",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "estatus_cfdi",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "descEstCFDI",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "Estatus",
+      "fieldValues": "Activo,Inactivo"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EstatusCFDI",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

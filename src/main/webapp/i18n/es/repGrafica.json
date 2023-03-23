@@ -1,0 +1,28 @@
+{
+  "proyecto03App": {
+    "repGrafica": {
+      "home": {
+        "title": "Rep Graficas",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Rep Grafica",
+        "createOrEditLabel": "Crear o editar Rep Grafica",
+        "notFound": "Ningún Rep Graficas encontrado"
+      },
+      "created": "Un nuevo Rep Grafica ha sido creado con el identificador {{ param }}",
+      "updated": "Un Rep Grafica ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Rep Grafica ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Rep Grafica {{ id }}?"
+      },
+      "detail": {
+        "title": "Rep Grafica"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "repGrafica": "Rep Grafica",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}

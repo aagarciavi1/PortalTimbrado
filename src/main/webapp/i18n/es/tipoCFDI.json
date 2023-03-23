@@ -1,0 +1,28 @@
+{
+  "proyecto03App": {
+    "tipoCFDI": {
+      "home": {
+        "title": "Tipo CFDIS",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Tipo CFDI",
+        "createOrEditLabel": "Crear o editar Tipo CFDI",
+        "notFound": "Ningún Tipo CFDIS encontrado"
+      },
+      "created": "Un nuevo Tipo CFDI ha sido creado con el identificador {{ param }}",
+      "updated": "Un Tipo CFDI ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Tipo CFDI ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tipo CFDI {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo CFDI"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "tipoCFDI": "Tipo CFDI",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "proyecto03App": {
+    "notificaciones": {
+      "home": {
+        "title": "Notificaciones",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Notificaciones",
+        "createOrEditLabel": "Create or edit a Notificaciones",
+        "notFound": "No Notificaciones found"
+      },
+      "created": "A new Notificaciones is created with identifier {{ param }}",
+      "updated": "A Notificaciones is updated with identifier {{ param }}",
+      "deleted": "A Notificaciones is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Notificaciones {{ id }}?"
+      },
+      "detail": {
+        "title": "Notificaciones"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "idInstit": "Id Instit",
+      "nivel": "Nivel",
+      "tipoNot": "Tipo Not",
+      "clave": "Clave",
+      "asunto": "Asunto",
+      "texto": "Texto",
+      "piePagina": "Pie Pagina",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod",
+      "registinstit": "Registinstit",
+      "tipocfdi": "Tipocfdi",
+      "tiporecibo": "Tiporecibo"
+    }
+  }
+}

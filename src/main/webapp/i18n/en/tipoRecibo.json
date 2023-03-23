@@ -1,0 +1,29 @@
+{
+  "proyecto03App": {
+    "tipoRecibo": {
+      "home": {
+        "title": "Tipo Recibos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Tipo Recibo",
+        "createOrEditLabel": "Create or edit a Tipo Recibo",
+        "notFound": "No Tipo Recibos found"
+      },
+      "created": "A new Tipo Recibo is created with identifier {{ param }}",
+      "updated": "A Tipo Recibo is updated with identifier {{ param }}",
+      "deleted": "A Tipo Recibo is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tipo Recibo {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Recibo"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "tipoRecibo": "Tipo Recibo",
+      "clave": "Clave",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "proyecto03App": {
+    "recibo": {
+      "home": {
+        "title": "Recibos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Recibo",
+        "createOrEditLabel": "Create or edit a Recibo",
+        "notFound": "No Recibos found"
+      },
+      "created": "A new Recibo is created with identifier {{ param }}",
+      "updated": "A Recibo is updated with identifier {{ param }}",
+      "deleted": "A Recibo is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Recibo {{ id }}?"
+      },
+      "detail": {
+        "title": "Recibo"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "idInstit": "Id Instit",
+      "nivel": "Nivel",
+      "tipoCFDI": "Tipo CFDI",
+      "clave": "Clave",
+      "envioConCFDI": "Envio Con CFDI",
+      "envioSinCFDI": "Envio Sin CFDI",
+      "aplicaLeyenda": "Aplica Leyenda",
+      "leyenda": "Leyenda",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod",
+      "tiporecibo": "Tiporecibo",
+      "repgrafica": "Repgrafica",
+      "parametros": "Parametros"
+    }
+  }
+}

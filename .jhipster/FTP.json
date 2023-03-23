@@ -1,0 +1,90 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223557",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "ftp",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "idInstit",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nivel",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "clave",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "carpetaFTP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subcarpetaFTP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcionFTP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ipFTP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "puerto",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usuarioFTP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contrasena",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "FTP",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "registInstit",
+      "ownerSide": true,
+      "relationshipName": "registinstit",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "tipoCFDI",
+      "ownerSide": true,
+      "relationshipName": "tipocfdi",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "tipoRecibo",
+      "ownerSide": true,
+      "relationshipName": "tiporecibo",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

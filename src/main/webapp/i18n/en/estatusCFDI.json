@@ -1,0 +1,28 @@
+{
+  "proyecto03App": {
+    "estatusCFDI": {
+      "home": {
+        "title": "Estatus CFDIS",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Estatus CFDI",
+        "createOrEditLabel": "Create or edit a Estatus CFDI",
+        "notFound": "No Estatus CFDIS found"
+      },
+      "created": "A new Estatus CFDI is created with identifier {{ param }}",
+      "updated": "A Estatus CFDI is updated with identifier {{ param }}",
+      "deleted": "A Estatus CFDI is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Estatus CFDI {{ id }}?"
+      },
+      "detail": {
+        "title": "Estatus CFDI"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "descEstCFDI": "Desc Est CFDI",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223554",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "regist_instit",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "idInstit",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "Estatus",
+      "fieldValues": "Activo,Inactivo"
+    },
+    {
+      "fieldName": "nivel",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "razonSocial",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rFC",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pais",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "municipio",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "localidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codigoPostal",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "colonia",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "calle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numExt",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numInt",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "logo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "certificado",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "llavePriv",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "contrasena",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaExp",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dias",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "correo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "RegistInstit",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "regimenFis",
+      "ownerSide": true,
+      "relationshipName": "regimenfis",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "estado",
+      "ownerSide": true,
+      "relationshipName": "estado",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "registInstit",
+      "ownerSide": true,
+      "relationshipName": "registinstit",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "registInstit",
+      "ownerSide": true,
+      "relationshipName": "registinstiti",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

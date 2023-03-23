@@ -1,0 +1,36 @@
+{
+  "proyecto03App": {
+    "usuarios": {
+      "home": {
+        "title": "Usuarios",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Usuarios",
+        "createOrEditLabel": "Create or edit a Usuarios",
+        "notFound": "No Usuarios found"
+      },
+      "created": "A new Usuarios is created with identifier {{ param }}",
+      "updated": "A Usuarios is updated with identifier {{ param }}",
+      "deleted": "A Usuarios is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Usuarios {{ id }}?"
+      },
+      "detail": {
+        "title": "Usuarios"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "usuario": "Usuario",
+      "descr": "Descr",
+      "idInstit": "Id Instit",
+      "correo": "Correo",
+      "contrasena": "Contrasena",
+      "confirmarContras": "Confirmar Contras",
+      "estatus": "Estatus",
+      "usuarioCrea": "Usuario Crea",
+      "registinstit": "Registinstit",
+      "perfil": "Perfil",
+      "tipocfdi": "Tipocfdi",
+      "tiporecibo": "Tiporecibo"
+    }
+  }
+}

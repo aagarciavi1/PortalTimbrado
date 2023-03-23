@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223603",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "estado",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "pais",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estatdo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descEstado",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estatus",
+      "fieldType": "Estatus",
+      "fieldValues": "Activo,Inactivo"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Estado",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

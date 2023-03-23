@@ -1,0 +1,50 @@
+{
+  "proyecto03App": {
+    "registInstit": {
+      "home": {
+        "title": "Regist Instits",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Regist Instit",
+        "createOrEditLabel": "Crear o editar Regist Instit",
+        "notFound": "Ningún Regist Instits encontrado"
+      },
+      "created": "Un nuevo Regist Instit ha sido creado con el identificador {{ param }}",
+      "updated": "Un Regist Instit ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Regist Instit ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Regist Instit {{ id }}?"
+      },
+      "detail": {
+        "title": "Regist Instit"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "idInstit": "Id Instit",
+      "estatus": "Estatus",
+      "nivel": "Nivel",
+      "razonSocial": "Razon Social",
+      "rFC": "R FC",
+      "pais": "Pais",
+      "municipio": "Municipio",
+      "localidad": "Localidad",
+      "codigoPostal": "Codigo Postal",
+      "colonia": "Colonia",
+      "calle": "Calle",
+      "numExt": "Num Ext",
+      "numInt": "Num Int",
+      "logo": "Logo",
+      "certificado": "Certificado",
+      "llavePriv": "Llave Priv",
+      "contrasena": "Contrasena",
+      "fechaExp": "Fecha Exp",
+      "dias": "Dias",
+      "correo": "Correo",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod",
+      "regimenfis": "Regimenfis",
+      "estado": "Estado",
+      "registinstit": "Registinstit",
+      "registinstiti": "Registinstiti"
+    }
+  }
+}

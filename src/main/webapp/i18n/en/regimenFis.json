@@ -1,0 +1,28 @@
+{
+  "proyecto03App": {
+    "regimenFis": {
+      "home": {
+        "title": "Regimen Fis",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Regimen Fis",
+        "createOrEditLabel": "Create or edit a Regimen Fis",
+        "notFound": "No Regimen Fis found"
+      },
+      "created": "A new Regimen Fis is created with identifier {{ param }}",
+      "updated": "A Regimen Fis is updated with identifier {{ param }}",
+      "deleted": "A Regimen Fis is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Regimen Fis {{ id }}?"
+      },
+      "detail": {
+        "title": "Regimen Fis"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "regimenF": "Regimen F",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}

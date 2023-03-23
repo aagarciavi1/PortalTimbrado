@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity FTP.
+    -->
+    <changeSet id="20230322223557-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="registinstit_id"
+                                 baseTableName="ftp"
+                                 constraintName="fk_ftp__registinstit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="regist_instit"/>
+
+        <addForeignKeyConstraint baseColumnNames="tipocfdi_id"
+                                 baseTableName="ftp"
+                                 constraintName="fk_ftp__tipocfdi_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tipo_cfdi"/>
+
+        <addForeignKeyConstraint baseColumnNames="tiporecibo_id"
+                                 baseTableName="ftp"
+                                 constraintName="fk_ftp__tiporecibo_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tipo_recibo"/>
+    </changeSet>
+</databaseChangeLog>

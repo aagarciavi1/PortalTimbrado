@@ -1,0 +1,62 @@
+{
+  "applications": "*",
+  "changelogDate": "20230322223600",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "funcionalidades",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "perfil",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "funcionalidad",
+      "fieldType": "Funcionalidad",
+      "fieldValues": "Instituciones,Catalogos,Configuracion,Seguridad,Reportes,ConsultaCFDI,EnvioFTP_Notificaciones,CancelacionRecibos,Auditoria"
+    },
+    {
+      "fieldName": "alta",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "editar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activarInact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "consulta",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaMod",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Funcionalidades",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "perfiles",
+      "otherEntityRelationshipName": "funcionalidades",
+      "relationshipName": "perfil",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

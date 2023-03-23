@@ -1,0 +1,28 @@
+{
+  "proyecto03App": {
+    "motivosCancel": {
+      "home": {
+        "title": "Motivos Cancels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Motivos Cancel",
+        "createOrEditLabel": "Create or edit a Motivos Cancel",
+        "notFound": "No Motivos Cancels found"
+      },
+      "created": "A new Motivos Cancel is created with identifier {{ param }}",
+      "updated": "A Motivos Cancel is updated with identifier {{ param }}",
+      "deleted": "A Motivos Cancel is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Motivos Cancel {{ id }}?"
+      },
+      "detail": {
+        "title": "Motivos Cancel"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "motivoCancel": "Motivo Cancel",
+      "estatus": "Estatus",
+      "usuario": "Usuario",
+      "fechaMod": "Fecha Mod"
+    }
+  }
+}
